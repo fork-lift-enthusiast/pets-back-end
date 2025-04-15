@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json());
 app.use(logger("dev"));
 
-// routes
+
 app.use("/api", routes);
 
 db.on("connected", () => {
